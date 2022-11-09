@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 
-// Вывести одномерный массив, заполнить числами random от 1 до 1000 и вывести в TextFild по нажатию кнопки! 
+// Вывести одномерный массив, заполнить числами random от 1 до 100 и вывести в TextFild по нажатию кнопки!
 public class VivodMassivaVTextArea extends JFrame{
 	public static void main(String[]args) {
 		Scanner scn = new Scanner(System.in);
@@ -35,14 +35,17 @@ public class VivodMassivaVTextArea extends JFrame{
 			});
 		}
 		vivod.add(pan);
-		vivod.setVisible(true);
 		vivod.setSize(400,500);
 		vivod.setLocationRelativeTo(null);
-		vivod.setResizable(false);
+//		vivod.setResizable(false);
 		vivod.setAlwaysOnTop(true);
 		vivod.setDefaultCloseOperation(VivodMassivaVTextArea.EXIT_ON_CLOSE);
+//		vivod.add(ta);
+//		vivod.add(bt);
+		pan.contains(30,30);
 		pan.add(ta);
 		pan.add(bt);
+		vivod.setVisible(true);
 	}
 	
 }
